@@ -1,0 +1,26 @@
+.login-form {
+    $button-color: hsl(212, 80%, 44%);
+    box-shadow: 1px 1px 10px;
+    width: fit-content;
+    padding: 1em;
+    > input {
+        display: block;
+        margin-bottom: 1em;
+    }
+    > label {
+        font-size: .9em;
+    }
+    > button {
+        padding: .3em 1em;
+        border: none;
+        background-color: $button-color;
+        color: white;
+        display: block;
+        margin: 0 auto;
+        transition: all .2s linear;
+        &:hover {
+            background-color: darken($button-color, 20%);
+            transform: scale(1.1, 1.1);
+        }
+    }
+}

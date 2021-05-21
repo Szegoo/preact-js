@@ -1,12 +1,43 @@
 .card {
-    box-sizing: border-box;
     box-shadow: 1px 1px 10px #111;
     width: fit-content;
+    position: relative;
     > img {
-        max-width: 150px;
+        max-width: 180px;
         padding: 1em;
     }
     > .description {
         padding: .1em 1em;
+    }
+    .card__modal {
+        background-color: white;
+        transition: all .5s linear;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        > a {
+            opacity: 0;
+        }
+    }
+    &:hover .card__modal {
+        opacity: 1;
+        background-color: rgba(0, 255, 255, 0.486);
+
+        > a {
+            opacity: 1;
+            content: "Buy";
+            color: white;
+            font-size: 1.5rem;
+            padding: .1em .5em;
+            border: 2px solid white;
+            background-color: rgba(17, 17, 17, 0.452);
+            cursor: pointer;
+        }
     }
 }

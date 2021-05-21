@@ -55,6 +55,7 @@
     max-width: 180px;
     padding: 1em; }
   .card > .description {
+    background-color: whitesmoke;
     padding: .1em 1em; }
   .card .card__modal {
     background-color: white;
@@ -74,7 +75,7 @@
       transition: font-size .5s ease-in; }
   .card:hover .card__modal {
     opacity: 1;
-    background-color: rgba(0, 255, 255, 0.486); }
+    background-color: rgba(0, 0, 0, 0.486); }
     .card:hover .card__modal > a {
       opacity: 1;
       content: "Buy";

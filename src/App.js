@@ -1,6 +1,6 @@
-import LoginForm from './components/login-form';
-import AlertBox from './components/alert-box';
-import Card from './components/card';
+import LoginForm from './preact-components/login-form';
+import AlertBox from './preact-components/alert-box';
+import Card from './preact-components/card';
 function App() {
   return (
     <div className="App">

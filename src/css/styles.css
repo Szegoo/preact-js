@@ -47,6 +47,16 @@
     transform: scale(0.1);
     opacity: 0; } }
 
+.card {
+  box-sizing: border-box;
+  box-shadow: 1px 1px 10px #111;
+  width: fit-content; }
+  .card > img {
+    max-width: 150px;
+    padding: 1em; }
+  .card > .description {
+    padding: .1em 1em; }
+
 :root {
   box-sizing: border-box; }
 

@@ -1,0 +1,12 @@
+.card {
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px #111;
+    width: fit-content;
+    > img {
+        max-width: 150px;
+        padding: 1em;
+    }
+    > .description {
+        padding: .1em 1em;
+    }
+}

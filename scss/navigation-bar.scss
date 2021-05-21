@@ -1,0 +1,20 @@
+.navigation-bar {
+    margin: 0;
+    display: flex;
+    background-color: hsl(0, 0%, 8%);
+    > li {
+        list-style-type: none;
+        > a {
+            display: block;
+            padding: 1em;
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: wheat;
+            }
+        }
+    }
+    > .special {
+        margin-left: auto;
+    }
+}

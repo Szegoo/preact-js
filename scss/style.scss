@@ -1,6 +1,7 @@
 @import "./login-form.scss";
 @import "./alert-box.scss";
 @import "./card.scss";
+@import "./navigation-bar.scss";
 :root {
     box-sizing: border-box;
 }
@@ -9,4 +10,7 @@
 ::before {
     box-sizing: inherit;
     font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
 }

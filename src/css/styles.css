@@ -86,6 +86,22 @@
       background-color: rgba(17, 17, 17, 0.452);
       cursor: pointer; }
 
+.navigation-bar {
+  margin: 0;
+  display: flex;
+  background-color: #141414; }
+  .navigation-bar > li {
+    list-style-type: none; }
+    .navigation-bar > li > a {
+      display: block;
+      padding: 1em;
+      color: white;
+      text-decoration: none; }
+      .navigation-bar > li > a:hover {
+        color: wheat; }
+  .navigation-bar > .special {
+    margin-left: auto; }
+
 :root {
   box-sizing: border-box; }
 
@@ -94,3 +110,6 @@
 ::before {
   box-sizing: inherit;
   font-family: Arial, Helvetica, sans-serif; }
+
+body {
+  margin: 0; }

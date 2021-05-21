@@ -10,7 +10,7 @@ export default () => {
                 <p className="price">4.99$</p>
             </div>
             <div className="card__modal">
-                <a onClick={addToCart}>Buy</a>
+                <a onClick={addToCart}>Add to Cart</a>
             </div>
         </div>
     )

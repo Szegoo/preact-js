@@ -22,7 +22,9 @@
         justify-content: center;
         align-items: center;
         > a {
+            font-size: .5rem;
             opacity: 0;
+            transition: font-size .5s ease-in;
         }
     }
     &:hover .card__modal {
@@ -33,7 +35,7 @@
             opacity: 1;
             content: "Buy";
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             padding: .1em .5em;
             border: 2px solid white;
             background-color: rgba(17, 17, 17, 0.452);

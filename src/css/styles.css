@@ -1,115 +1,150 @@
 .login-form {
   box-shadow: 1px 1px 10px;
   width: fit-content;
-  padding: 1em; }
-  .login-form > input {
-    display: block;
-    margin-bottom: 1em; }
-  .login-form > label {
-    font-size: .9em; }
-  .login-form > button {
-    padding: .3em 1em;
-    border: none;
-    background-color: #166aca;
-    color: white;
-    display: block;
-    margin: 0 auto;
-    transition: all .2s linear; }
-    .login-form > button:hover {
-      background-color: #0c3a6e;
-      transform: scale(1.1, 1.1); }
+  padding: 1em;
+}
+.login-form > input {
+  display: block;
+  margin-bottom: 1em;
+}
+.login-form > label {
+  font-size: 0.9em;
+}
+.login-form > button {
+  padding: 0.3em 1em;
+  border: none;
+  background-color: #166aca;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.2s linear;
+}
+.login-form > button:hover {
+  background-color: #0c3a6e;
+  transform: scale(1.1, 1.1);
+}
 
-.alert-box {
-  background-color: #55be55;
+.alert-box,
+.alert-box_danger,
+.alert-box_warning {
   color: white;
   width: fit-content;
-  font-size: .9em;
-  padding: .1em 3em;
-  border-radius: .5em;
+  font-size: 0.9em;
+  padding: 0.1em 3em;
+  border-radius: 0.5em;
   box-shadow: 1px 1px 10px black;
   animation: pop-up 1s linear;
-  animation-fill-mode: forwards; }
-
+  animation-fill-mode: forwards;
+}
+.alert-box {
+  background-color: hsl(120, 45%, 54%);
+}
+.alert-box_danger {
+  background-color: hsl(0, 100%, 65%);
+}
+.alert-box_warning {
+  background-color: hsl(24, 100%, 66%);
+}
 @keyframes pop-up {
   0% {
-    padding: .1em 1em;
+    padding: 0.1em 1em;
     transform: scale(1);
-    opacity: 1; }
+    opacity: 1;
+  }
   50% {
-    padding: .1em 4em;
+    padding: 0.1em 4em;
     transform: scale(1);
-    opacity: 1; }
+    opacity: 1;
+  }
   70% {
-    padding: .1em 3em;
+    padding: 0.1em 3em;
     transform: scale(1);
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
     transform: scale(0.1);
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 
 .card {
   box-shadow: 1px 1px 10px #111;
   width: fit-content;
-  position: relative; }
-  .card > img {
-    max-width: 180px;
-    padding: 1em; }
-  .card > .description {
-    background-color: whitesmoke;
-    padding: .1em 1em; }
-  .card .card__modal {
-    background-color: white;
-    transition: all .5s linear;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    opacity: 0;
-    justify-content: center;
-    align-items: center; }
-    .card .card__modal > a {
-      font-size: .5rem;
-      opacity: 0;
-      transition: font-size .5s ease-in; }
-  .card:hover .card__modal {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.486); }
-    .card:hover .card__modal > a {
-      opacity: 1;
-      content: "Buy";
-      color: white;
-      font-size: 1.2rem;
-      padding: .1em .5em;
-      border: 2px solid white;
-      background-color: rgba(17, 17, 17, 0.452);
-      cursor: pointer; }
+  position: relative;
+}
+.card > img {
+  max-width: 180px;
+  padding: 1em;
+}
+.card > .description {
+  background-color: whitesmoke;
+  padding: 0.1em 1em;
+}
+.card .card__modal {
+  background-color: white;
+  transition: all 0.5s linear;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+}
+.card .card__modal > a {
+  font-size: 0.5rem;
+  opacity: 0;
+  transition: font-size 0.5s ease-in;
+}
+.card:hover .card__modal {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+.card:hover .card__modal > a {
+  opacity: 1;
+  content: "Buy";
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.1em 0.5em;
+  border: 2px solid white;
+  background-color: rgba(17, 17, 17, 0.452);
+  cursor: pointer;
+}
 
 .navigation-bar {
   margin: 0;
   display: flex;
-  background-color: #141414; }
-  .navigation-bar > li {
-    list-style-type: none; }
-    .navigation-bar > li > a {
-      display: block;
-      padding: 1em;
-      color: white;
-      text-decoration: none; }
-      .navigation-bar > li > a:hover {
-        color: wheat; }
-  .navigation-bar > .special {
-    margin-left: auto; }
+  background-color: #141414;
+}
+.navigation-bar > li {
+  list-style-type: none;
+}
+.navigation-bar > li > a {
+  display: block;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+}
+.navigation-bar > li > a:hover {
+  color: wheat;
+}
+.navigation-bar > .special {
+  margin-left: auto;
+}
 
 :root {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *,
 ::after,
 ::before {
   box-sizing: inherit;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
-  margin: 0; }
+  margin: 0;
+}

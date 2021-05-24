@@ -5,8 +5,9 @@ export default () => {
         setOpen(currentState => !currentState);
     }
     return (
-        <div>
+        <div className="nav">
             <ul className="navigation-bar">
+                <h1>Title</h1>
                 <li><a href="/">Home</a></li>
                 <li><a href="/get-started">Get Started</a></li>
                 <li><a href="/donate">Donate</a></li>
@@ -24,10 +25,18 @@ export default () => {
                     </ul>
                 }
             </div>
-            <style jsx>{`
+            <style>{`
+                div {
+                    background-color green;
+                }
+                .navigation-bar > h1 {
+                    margin: 0;
+                    color: white;
+                }
                 .navigation-bar {
                     margin: 0;
                     display: flex;
+                    align-items: center;
                     background-color: #141414; }
                     .navigation-bar > li {
                         list-style-type: none; }

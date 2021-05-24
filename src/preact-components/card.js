@@ -12,7 +12,7 @@ export default () => {
             <div className="card__modal">
                 <a onClick={addToCart}>Add to Cart</a>
             </div>
-            <style jsx>{`
+            <style>{`
                 .card {
                     box-shadow: 1px 1px 10px #111;
                     width: fit-content;

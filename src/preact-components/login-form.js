@@ -15,7 +15,7 @@ export default () => {
             <label>Password</label>
             <input onChange={(e) => { setPassword(e.target.value) }} type="password" />
             <button onClick={login}>Login</button>
-            <style jsx>{`
+            <style>{`
                 .login-form {
                     box-shadow: 1px 1px 10px;
                     width: fit-content;

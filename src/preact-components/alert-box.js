@@ -4,7 +4,7 @@ export default () => {
   return (
     <div className={alertColors[num]}>
       <p>Changes saved. This is an alert</p>
-      <style jsx>{`
+      <style>{`
          .alert-box,
           .alert-box_danger,
           .alert-box_warning {

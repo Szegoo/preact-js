@@ -15,6 +15,7 @@ export default () => {
             </ul>
             <div className="navigation-bar-mobile">
                 <div onClick={toggleOpen} className="navigation-toggle"></div>
+                <h1>Title</h1>
                 {isOpen &&
                     <ul>
                         <li><a href="/">Home</a></li>
@@ -87,6 +88,12 @@ export default () => {
                             padding: 1em; }
                         .navigation-bar-mobile > ul .exit-button {
                         font-weight: 200; }
+                    .navigation-bar-mobile > h1 {
+                        color: black;
+                        top: 0;
+                        margin: .1em;
+                        position: absolute;
+                    }
 
                     @keyframes move-in {
                     0% {

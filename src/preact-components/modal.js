@@ -8,13 +8,14 @@ export default () => {
             </button>
             {modal &&
                 <div className="modal-background">
-                    <div className="modal">
+                    <form className="modal">
+                        <h1>Enter Shipping Information</h1>
                         <input placeholder="address" />
                         <input placeholder="city" />
                         <input placeholder="coutry" />
                         <button>Confirm</button>
                         <button onClick={() => setModal(currentState => !currentState)} id="close">Close</button>
-                    </div>
+                    </form>
                 </div>
             }
             <style>
@@ -34,6 +35,12 @@ export default () => {
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                    }
+                    .modal > h1 {
+                        margin-bottom: 2em;
+                        font-size: 2.5rem;
+                        font-family: sans-serif;
+                        color: hsl(207, 68%, 52%);
                     }
                     .modal > button {
                         margin-top: 2em;
@@ -56,8 +63,7 @@ export default () => {
                     .modal > input {
                         padding: .7em 5em .7em 0.5em;
                         border: none;
-                        border-radius: 1em;
-                        box-shadow: 1px 1px 10px #111;
+                        box-shadow: 1px 1px 5px hsla(0, 0%, 7%, 0.445);
                     }
                     .modal > input + input {
                         margin-top: 2em;

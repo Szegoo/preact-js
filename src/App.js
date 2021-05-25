@@ -3,6 +3,7 @@ import AlertBox from './preact-components/alert-box';
 import Card from './preact-components/card';
 import NavigationBar from './preact-components/navigation-bar';
 import Modal from './preact-components/modal';
+import Table from './preact-components/table';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AlertBox />
       <Card />
       <Modal />
+      <Table />
     </div>
   );
 }

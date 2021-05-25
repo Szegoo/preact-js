@@ -1,6 +1,6 @@
 import { useState } from 'react';
 export default () => {
-    const [modal, setModal] = useState(true)
+    const [modal, setModal] = useState(false)
     return (
         <div>
             <button onClick={() => { setModal(currentState => !currentState) }}>

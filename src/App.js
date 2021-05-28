@@ -10,8 +10,19 @@ function App() {
   return (
     <div className="App">
       <NavigationBar />
+
+      {/* you can change the image with src prop */}
       <HeroImage />
       <LoginForm />
+
+      {/*you can choose from color variants with type prop
+        these are the types: 
+        alert-box -green color
+        alert-box_warning -orange color
+        alert-box_danger -red color
+        if you leave type empty the type is gonna be
+        random.  
+      */}
       <AlertBox />
       <Card />
       <Modal />

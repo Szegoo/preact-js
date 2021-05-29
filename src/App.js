@@ -9,6 +9,12 @@ import HeroImage from './preact-components/heroImage';
 function App() {
   return (
     <div className="App">
+      {/* change the color and background color with 
+        color and backgroundColor props
+        the default:
+          background: #141414
+          color: white
+       */}
       <NavigationBar />
 
       {/* you can change the image with src prop */}

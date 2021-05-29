@@ -1,5 +1,5 @@
 import { useState } from 'react';
-export default () => {
+export default ({backgroundColor, color}) => {
     const [isOpen, setOpen] = useState(false)
     const toggleOpen = () => {
         setOpen(currentState => !currentState);
@@ -30,21 +30,19 @@ export default () => {
                 div {
                     background-color green;
                 }
-                .navigation-bar > h1 {
-                    margin: 0;
-                    color: white;
-                }
                 .navigation-bar {
+                    color: ${color || "white"};
                     margin: 0;
                     display: flex;
                     align-items: center;
-                    background-color: #141414; }
+                        background-color: ${backgroundColor || "#141414"};
+                    }
                     .navigation-bar > li {
                         list-style-type: none; }
                         .navigation-bar > li > a {
                         display: block;
                         padding: 1em;
-                        color: white;
+                        color: ${color || "white"};
                         text-decoration: none; }
                         .navigation-bar > li > a:hover {
                             color: wheat; }
@@ -78,7 +76,7 @@ export default () => {
                         margin: 0;
                         list-style-type: none;
                         padding: 0;
-                        background-color: #141414; }
+                        background-color: ${backgroundColor || "#141414"};
                         .navigation-bar-mobile > ul > li {
                         text-align: center; }
                         .navigation-bar-mobile > ul > li > a {

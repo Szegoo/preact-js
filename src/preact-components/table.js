@@ -30,19 +30,34 @@ export default () => {
             </table>
             <style>{`
                 table {
-                    width: 90vw;
-                    margin: 0 auto;
-                    text-align: center;
+                    border-collapse: collapse;
                 }
-                table > thead {
-                    background-color: #141414;
-                    color: white;
-                    line-height: 2.5;
+
+                th, td {
+                    border: 1px solid black;
+                    padding: 0.3em 0.5em;
                 }
-                table > tbody {
-                    line-height: 2;
-                    background-color: rgb(248, 248, 248);
+
+
+                table {
+                    width: 100%;
                 }
+
+                @media (max-width: 30em) {
+                    table, thead, tbody, tr, th, td {
+                        display: block;
+                    }
+
+                thead tr {
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+
+                tr {
+                    margin-bottom: 1em;
+                }
+            }
             `}</style>
         </div>
     )
